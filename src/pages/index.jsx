@@ -7,6 +7,7 @@ import SocialLink from '@/components/SocialLink'
 
 import siteMetadata from '@/data/siteMetadata'
 import Testimonial from '@/components/Testimonial'
+import Faq from '@/components/Faq'
 
 export default function Home({ articles }) {
   return (
@@ -23,7 +24,7 @@ export default function Home({ articles }) {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {siteMetadata.authorAbout}
           </p>
-          <div className="mt-6 flex gap-6">
+          <div className="flex gap-6 mt-6">
             <SocialLink
               href={siteMetadata.socials.twitter}
               aria-label="Follow on Twitter"
@@ -43,6 +44,7 @@ export default function Home({ articles }) {
         </div>
       </Container>
       <Testimonial />
+      <Faq />
     </>
   )
 }

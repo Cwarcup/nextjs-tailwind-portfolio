@@ -10,9 +10,8 @@ const siteMetadata = {
     twitter: 'https://twitter.com/curtiswarcup',
     github: 'https://github.com/Cwarcup',
     linkedin: 'https://www.linkedin.com/in/curtiswarcup/',
-    
-
-  }
+  },
+  email: 'curtis.gwarcup@gmail.com'
 }
 
 export default siteMetadata
