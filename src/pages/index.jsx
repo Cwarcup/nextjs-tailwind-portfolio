@@ -6,8 +6,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import SocialLink from '@/components/SocialLink'
 
 import siteMetadata from '@/data/siteMetadata'
-
-import Resume from '@/components/Resume'
+import Testimonial from '@/components/Testimonial'
 
 export default function Home({ articles }) {
   return (
@@ -17,7 +16,7 @@ export default function Home({ articles }) {
         <meta name="description" content={siteMetadata.description} />
       </Head>
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div className="grid max-w-2xl ">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             {siteMetadata.authorHeadline}
           </h1>
@@ -43,13 +42,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-
-      <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <Resume />
-          <div className="space-y-10 lg:pl-16 xl:pl-24"></div>
-        </div>
-      </Container>
+      <Testimonial />
     </>
   )
 }
