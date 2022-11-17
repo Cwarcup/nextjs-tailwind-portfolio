@@ -1,15 +1,15 @@
 const Testimonial = () => {
   return (
-    <div className="pt-16 lg:py-24">
-      <div className="bg-indigo-600 pb-16 lg:relative lg:z-10 lg:pb-0">
+    <div className="pt-16 lg:py-24 ">
+      <div className="pb-16 bg-fixed bg-center bg-cover bg-gradient-to-b from-red-500 to-blue-500 lg:relative lg:z-10 lg:pb-0">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
           <div className="relative lg:-my-8">
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"
+              className="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"
             />
-            <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
-              <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+            <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
+              <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <img
                   className="object-cover lg:h-full lg:w-full"
                   src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
@@ -19,11 +19,11 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
-            <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+            <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
               <blockquote>
                 <div>
                   <svg
-                    className="h-12 w-12 text-white opacity-25"
+                    className="w-12 h-12 text-white opacity-25"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                     aria-hidden="true"

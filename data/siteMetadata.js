@@ -11,7 +11,13 @@ const siteMetadata = {
     github: 'https://github.com/Cwarcup',
     linkedin: 'https://www.linkedin.com/in/curtiswarcup/',
   },
-  email: 'curtis.gwarcup@gmail.com'
+  email: 'curtis.gwarcup@gmail.com',
+  phoneNumber: '123-456-7890',
+  analytics: {
+    plausibleDataDomain: 'https://cwarcup.com/', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    googleAnalyticsId: 'G-XXXXXXX', // e.g. UA-000000-2 or G-XXXXXXX
+  },
+  siteRepo: 'https://github.com/Cwarcup/',
 }
 
 export default siteMetadata
