@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 const Testimonial = () => {
   return (
     <div className="pt-16 lg:py-24 ">
@@ -11,10 +11,12 @@ const Testimonial = () => {
             />
             <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
               <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                <img
+                <Image
                   className="object-cover lg:h-full lg:w-full"
                   src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                  alt=""
+                  alt="testimonials"
+                  width={500}
+                  height={500}
                 />
               </div>
             </div>

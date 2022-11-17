@@ -9,6 +9,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Testimonial from '@/components/Testimonial'
 import Faq from '@/components/Faq'
 import FeatureSection from '@/components/FeatureSection'
+import CallToAction from '@/components/CallToAction'
 
 export default function Home({ articles }) {
   return (
@@ -47,6 +48,7 @@ export default function Home({ articles }) {
       <FeatureSection />
       <Testimonial />
       <Faq />
+      <CallToAction />
     </>
   )
 }
