@@ -2,12 +2,12 @@ import Head from 'next/head'
 import { Container } from '@/components/Container'
 import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import SocialLink from '@/components/SocialLink'
-
-import siteMetadata from '@/data/siteMetadata'
 import Testimonial from '@/components/Testimonial'
 import Faq from '@/components/Faq'
 import FeatureSection from '@/components/FeatureSection'
 import CallToAction from '@/components/CallToAction'
+import DivideLine from '@/components/DivideLine'
+import siteMetadata from '@/data/siteMetadata'
 
 const Home = () => {
   return (
@@ -43,6 +43,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      <DivideLine />
       <FeatureSection />
       <Testimonial />
       <Faq />
