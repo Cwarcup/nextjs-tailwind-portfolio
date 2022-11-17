@@ -8,6 +8,7 @@ import SocialLink from '@/components/SocialLink'
 import siteMetadata from '@/data/siteMetadata'
 import Testimonial from '@/components/Testimonial'
 import Faq from '@/components/Faq'
+import FeatureSection from '@/components/FeatureSection'
 
 export default function Home({ articles }) {
   return (
@@ -43,6 +44,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
+      <FeatureSection />
       <Testimonial />
       <Faq />
     </>
