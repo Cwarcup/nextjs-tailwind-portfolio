@@ -12,8 +12,6 @@ const Contact = () => {
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
 
-  console.log(firstName, lastName, email, phone, subject, message)
-
   // handle first name change
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value)
@@ -46,7 +44,6 @@ const Contact = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault()
-    console.log('submitting')
 
     const templateParams = {
       firstName: firstName,
