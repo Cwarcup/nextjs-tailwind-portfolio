@@ -13,6 +13,7 @@ const siteMetadata = {
     github: 'https://github.com/Cwarcup',
     linkedin: 'https://www.linkedin.com/in/curtiswarcup/',
     instagram: 'https://www.instagram.com/curtiswarcup/',
+    facebook: 'https://www.facebook.com/curtiswarcup',
   },
   email: 'curtis.gwarcup@gmail.com',
   phoneNumber: '123-456-7890',
