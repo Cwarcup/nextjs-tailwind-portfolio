@@ -56,3 +56,10 @@ This branch is for those who want to use this as an ecommerce site. It includes 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Nitty Gritty
+
+### Icons
+
+This project uses [React Icons](https://react-icons.github.io/react-icons/) for icons, specifically the [Remix Design Icons](https://react-icons.github.io/react-icons/icons?name=ri). If you need the svg files, you can find them [here](https://github.com/Remix-Design/RemixIcon/tree/master/icons).
+
