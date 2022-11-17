@@ -1,4 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
+import { motion } from 'framer-motion'
 
 const faqs = [
   {
@@ -39,12 +40,18 @@ const Faq = () => {
         <div className="mt-12 lg:col-span-2 lg:mt-0">
           <dl className="space-y-12">
             {faqs.map((faq) => (
-              <div key={faq.question}>
-                <dt className="text-lg font-medium leading-6 text-gray-900">
-                  {faq.question}
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>
-              </div>
+              <motion.div
+                whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+                transitions={{ duration: 3, type: 'tween' }}
+                key={faq.question}
+              >
+                <div>
+                  <dt className="text-lg font-medium leading-6 text-gray-900">
+                    {faq.question}
+                  </dt>
+                  <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>
+                </div>
+              </motion.div>
             ))}
           </dl>
         </div>
