@@ -83,8 +83,7 @@ const Contact = () => {
   return (
     <>
       {/* Header */}
-
-      <div className="py-24 lg:py-32">
+      <div className="pt-24 pb-8 lg:pt-32">
         <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
             Get in touch
@@ -101,51 +100,16 @@ const Contact = () => {
           className="absolute w-full bg-warm-gray-50 h-1/2"
           aria-hidden="true"
         />
-        {/* Decorative dot pattern */}
-        <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <svg
-            className="absolute top-0 right-0 z-0 transform translate-x-1/2 -translate-y-16 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72"
-            width={404}
-            height={384}
-            fill="none"
-            viewBox="0 0 404 384"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                x={0}
-                y={0}
-                width={20}
-                height={20}
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x={0}
-                  y={0}
-                  width={4}
-                  height={4}
-                  className="text-warm-gray-200"
-                  fill="currentColor"
-                />
-              </pattern>
-            </defs>
-            <rect
-              width={404}
-              height={384}
-              fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-            />
-          </svg>
-        </div>
+
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative bg-white shadow-xl">
+          <div className="relative bg-white rounded-lg shadow-xl">
             <h2 id="contact-heading" className="sr-only">
               Contact us
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Contact information */}
-              <div className="relative px-6 py-10 overflow-hidden bg-gradient-to-b from-teal-500 to-teal-600 sm:px-10 xl:p-12">
+              <div className="relative px-6 py-10 overflow-hidden rounded-lg bg-gradient-to-b from-teal-500 to-teal-600 sm:px-10 xl:p-12">
                 {/* Decorative angle backgrounds */}
                 <div
                   className="absolute inset-0 pointer-events-none sm:hidden"
