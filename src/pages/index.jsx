@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { Container } from '@/components/Container'
 import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
 import SocialLink from '@/components/SocialLink'
 
 import siteMetadata from '@/data/siteMetadata'
@@ -11,7 +9,7 @@ import Faq from '@/components/Faq'
 import FeatureSection from '@/components/FeatureSection'
 import CallToAction from '@/components/CallToAction'
 
-export default function Home({ articles }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -51,18 +49,4 @@ export default function Home({ articles }) {
       <CallToAction />
     </>
   )
-}
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-
-  return {
-    props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
 }
