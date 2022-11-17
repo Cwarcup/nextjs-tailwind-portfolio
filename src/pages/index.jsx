@@ -9,7 +9,7 @@ import Faq from '@/components/Faq'
 import FeatureSection from '@/components/FeatureSection'
 import CallToAction from '@/components/CallToAction'
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -50,3 +50,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

@@ -37,10 +37,8 @@ const modeScript = `
 
 export default function Document() {
   return (
-    <Html className="h-full scroll-smooth antialiased" lang="en">
+    <Html className="h-full antialiased scroll-smooth" lang="en">
       <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
         <link
           rel="alternate"
@@ -78,7 +76,7 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
       </Head>
-      <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
+      <body className="flex flex-col h-full bg-zinc-50 dark:bg-black">
         <Main />
         <NextScript />
       </body>
