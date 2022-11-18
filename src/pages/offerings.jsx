@@ -20,7 +20,7 @@ const Offerings = () => {
             <div className="max-w-xl px-4 mx-auto sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div>
-                  <span className="flex items-center justify-center w-12 h-12 bg-indigo-600 rounded-md">
+                  <span className="flex items-center justify-center w-12 h-12 rounded-md bg-accent-600">
                     <RiMentalHealthLine
                       className="w-6 h-6 text-white"
                       aria-hidden="true"
@@ -37,7 +37,7 @@ const Offerings = () => {
                   <div className="mt-6">
                     <Link
                       href="/contact"
-                      className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
+                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-600 hover:bg-accent-700"
                     >
                       Get started
                     </Link>
@@ -80,7 +80,7 @@ const Offerings = () => {
             <div className="max-w-xl px-4 mx-auto sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
               <div>
                 <div>
-                  <span className="flex items-center justify-center w-12 h-12 bg-indigo-600 rounded-md">
+                  <span className="flex items-center justify-center w-12 h-12 rounded-md bg-accent-600">
                     <RiOpenArmLine
                       className="w-6 h-6 text-white"
                       aria-hidden="true"
@@ -97,7 +97,7 @@ const Offerings = () => {
                   <div className="mt-6">
                     <Link
                       href="/contact"
-                      className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
+                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-600 hover:bg-accent-700"
                     >
                       Get started
                     </Link>

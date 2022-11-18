@@ -359,7 +359,7 @@ const Contact = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
                       />
                     </div>
                   </div>
@@ -386,7 +386,7 @@ const Contact = () => {
                         name="phone"
                         id="phone"
                         autoComplete="tel"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-violet-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
                         aria-describedby="phone-optional"
                       />
                     </div>
@@ -405,7 +405,7 @@ const Contact = () => {
                         type="text"
                         name="subject"
                         id="subject"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-violet-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
                       />
                     </div>
                   </div>
@@ -430,7 +430,7 @@ const Contact = () => {
                         id="message"
                         name="message"
                         rows={4}
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-violet-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
                         aria-describedby="message-max"
                         defaultValue={''}
                       />
@@ -439,7 +439,7 @@ const Contact = () => {
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-violet-500 hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 sm:w-auto"
+                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 sm:w-auto"
                     >
                       Submit
                     </button>

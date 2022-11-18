@@ -30,9 +30,9 @@ module.exports = {
       colors: {
         // https://tailwindcss.com/docs/customizing-colors#color-palette-reference
         primaryText: colors.zinc,
-        accent: colors.violet,
-        gradientStart: colors.violet,
-        gradientEnd: colors.blue,
+        accent: colors.sky,
+        gradientStart: colors.sky,
+        gradientEnd: colors.stone,
         // primarybackground
         // secondaryText
         // accent
