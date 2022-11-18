@@ -1,18 +1,19 @@
-import { RiMentalHealthLine, RiOpenArmLine } from 'react-icons/ri'
+import { RiRunLine, RiSignalWifi3Line } from 'react-icons/ri'
+import siteMetadata from '@/data/siteMetadata'
 
 // TODO: Add your own features here. Make sure to add the icon from Remix-Design's repo:
 const features = [
   {
-    name: 'Coaching',
+    name: 'Pizza Delivery',
     description:
-      'Coaching is a fast-paced direct approach to engage action-oriented individuals to achieve their goals and create meaningful change. ',
-    icon: RiOpenArmLine,
+      'I will teach you how to properly deliver pizza, ensuring that your customers are happy and your tips are high. Most pizza delivery drivers are not taught how to properly deliver pizza, and as a result, they are not making the most money they could be.',
+    icon: RiRunLine,
   },
   {
-    name: 'Counseling',
+    name: 'Pizza Making',
     description:
-      'I am a trauma-informed counsellor and use a holistic approach to explore physical, mental, social, emotional, and spiritual health.',
-    icon: RiMentalHealthLine,
+      'This three-hour pizza class will offer our attendees the opportunity to craft homemade dough, prepare the pizza and cook a delicious meal to enjoy at the end of class.',
+    icon: RiSignalWifi3Line,
   },
 ]
 const FeatureSection = () => {
@@ -24,14 +25,10 @@ const FeatureSection = () => {
             Offerings
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-4xl">
-            One day you finally knew what you had to do, and began.
+            {siteMetadata.featureSection.title}
           </p>
           <p className="max-w-2xl mx-auto mt-6 text-lg leading-8 text-primaryText-600 dark:text-primaryText-400">
-            My vision is to guide clients towards empowerment and self-efficacy.
-            I am honored to be your companion on the path of healing and
-            self-discovery. Whether your goal is to excel in your career, thrive
-            in your relationships, or start to live authentically with intent
-            and purpose, you can depend on me as a source of support.
+            {siteMetadata.featureSection.description}
           </p>
         </div>
 

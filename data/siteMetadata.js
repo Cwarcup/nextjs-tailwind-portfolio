@@ -1,13 +1,13 @@
 const siteMetadata = {
-  title: 'cwarcup - Nextjs Tailwind Starter',
+  title: 'Best Nextjs Tailwind Portfolio',
   description:
-    'A starter template for personal portfolio site using Nextjs and Tailwind',
+    'This is where you can learn about me and my work. I am a full stack developer and I love to build things.',
   author: 'Curtis Warcup',
-  authorHeadline: 'Full Stack Developer, specializing in React and Tailwind.',
+  authorHeadline: 'Full Stack Developer, amateur pizza critic 🍕',
   authorAbout:
-    "Hi, I'm Curtis, a full stack developer. I hope you enjoy this starter template. I created this to help new developers get started with a personal portfolio site using Nextjs and Tailwind. I hope you find it useful.",
+    "Hi, I'm Curtis, a full stack developer. I created this to help my mom create a website for all her crazy business ideas. I hope you like it!",
   authorAboutExtended:
-    "Curtis is a Canadian-born, living in beautify Vancouver, BC. After graduating from the University of British Columbia with a bachelor's degree in Kinesiology, he quickly rose through the ranks in the largest consumer electronics company, Apple. \n \n In his personal life, Curtis is an avid cyclist and health nut. He enjoys making weekly meal preps and running with his dog. When he's not coding, exercising, or cooking, Curtis can be found in various mechanical keyboard enthusiast forums, scoping out his next purchase.",
+    "Curtis is a Canadian-born, living in beautify Vancouver, BC. \n \n In his personal life, Curtis is an avid cyclist and health nut. He enjoys making weekly meal preps and running with his dog. When he's not coding, exercising, or cooking, Curtis can be found in various mechanical keyboard enthusiast forums, scoping out his next purchase. I also like eating food, especially pizza.",
   socials: {
     twitter: 'https://twitter.com/curtiswarcup',
     github: 'https://github.com/Cwarcup',
@@ -17,6 +17,9 @@ const siteMetadata = {
   },
   email: 'curtis.gwarcup@gmail.com',
   phoneNumber: '123-456-7890',
+  contactTitle: 'Get in touch',
+  contactSubtitle:
+    "I am currently making banging pizza's and amazing websites. If you want to get in touch, please use the form below.",
   analytics: {
     plausibleDataDomain: 'https://cwarcup.com/', // e.g. tailwind-nextjs-starter-blog.vercel.app
     googleAnalyticsId: 'G-XXXXXXX', // e.g. UA-000000-2 or G-XXXXXXX
@@ -24,27 +27,67 @@ const siteMetadata = {
   siteRepo: 'https://github.com/Cwarcup/',
   offerings: [
     {
-      title: 'One-on-one coaching',
+      title: 'Pizza Delivery',
       description:
-        'I will work with you personally to understand how you function as an individual and in your personal and professional relationships. My assessment process includes an extensive biopsychosocial interview where I explore factors that may hinder your progress. The entire coaching process is carefully curated with detailed feedback on performance and areas of potential growth. International clients welcome.',
+        'I will teach you how to properly deliver pizza, ensuring that your customers are happy and your tips are high. Most pizza delivery drivers are not taught how to properly deliver pizza, and as a result, they are not making the most money they could be. Have you ever received a pizza that was cold, soggy, or missing toppings? Hire me to teach you how to deliver pizza properly, and you will never have to worry about that again.',
       testimonial:
-        '“Curtis is a great coach. He helped me to understand my strengths and weaknesses and how to improve my performance. I would highly recommend him to anyone looking to improve their performance.”',
-      testimonialAuthor: 'John Doe',
-      testimonialAuthorTitle: 'CEO at ABC Company',
+        '“Curtis is a great pizza delivery person. He helped me to understand my strengths and weaknesses and how to improve my performance. I would highly recommend him to anyone looking to improve their performance.”',
+      testimonialAuthor: 'Elon Musk',
+      testimonialAuthorTitle: 'CEO at Dumpster Fire, Inc.',
       imgUrl:
-        'https://images.unsplash.com/photo-1507537362848-9c7e70b7b5c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
+        'https://images.unsplash.com/photo-1594392175511-30eca83d51c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
+      imageAttribution: 'Photo by @dan__burton on Unsplash',
     },
     {
-      title: 'Counselling',
+      title: 'Pizza Making',
       description:
-        'For 15 years I have worked with individuals who have been impacted by substance use, relationship challenges, and intergenerational trauma. I feel a great sense of compassion and empathy towards people who have a genuine desire to create healthy relationships and boundaries but are stuck due to unresolved trauma. I am a firm believer that everyone’s journey is going to be unique and I respect that counselling is a healing process that begins only when an individual is ready to embrace change. I have a tremendous amount of gratitude for the work that I do and deeply value trust, transparency, and honesty in my collaborative relationship with clients.',
+        'This three-hour pizza class will offer our attendees the opportunity to craft homemade dough, prepare the pizza and cook a delicious meal to enjoy at the end of class. Attendees will get to take home extra dough, the secret recipe, and an ingredients list so they can independently recreate this pizza at home.',
       testimonial: '',
       testimonialAuthor: '',
       testimonialAuthorTitle: '',
       imgUrl:
-        'https://images.unsplash.com/photo-1531913223931-b0d3198229ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1889&q=80',
+        'https://images.unsplash.com/photo-1532460734809-e7f8475ca917?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3237&q=80',
+      imageAttribution: 'Photo by @juanmanunez on Unsplash',
     },
   ],
+  testimonial: {
+    comment:
+      '“Curtis is a great pizza delivery person. He helped me to understand my strengths and weaknesses and how to improve my performance. I would highly recommend him to anyone looking to improve their performance.”',
+    author: 'Elon Musk',
+    authorTitle: 'CEO at Dumpster Fire, Inc.',
+  },
+  featureSection: {
+    title: 'Why Choose Me?',
+    description:
+      'I am a full stack developer and I love to build things. I can also make a crappy pizza.',
+    //TODO also need to update the features array in the FeatureSection component
+  },
+  experience: {
+    title: 'Things I’ve done trying to put my dent in the universe.',
+    intro:
+      "I have never delivered pizza before, but I have made it. I don't think you should hire me for my pizza skills, but I'm sure I'm a great developer. I've been coding for a long time, and my mom says I'm pretty good at it.",
+    //TODO also need to update the experience array in the ExperienceSection component. This is because of the icons used.
+    education: [
+      {
+        schoolName: 'University of British Columbia',
+        degree: 'Bachelor of Kinesiology',
+        description:
+          'Kinesiology is the study of human movement. It is a multidisciplinary field that draws on knowledge from the biological, physical, and social sciences to understand how people move and function. Kinesiology is a broad field that includes the study of human movement, health, and wellness. It is a multidisciplinary field that draws on knowledge from the biological, physical, and social sciences to understand how people move and function. Kinesiology is a broad field that includes the study of human movement, health, and wellness.',
+        startDate: '2013',
+        endDate: '2017',
+        typeofDegree: 'Bachelor Degree',
+      },
+      {
+        schoolName: 'Lighthouse Labs',
+        degree: 'Web Development',
+        description:
+          'Lighthouse Labs is a 12-week full-time web development bootcamp.  The program is designed to teach students the skills needed to become a junior web developer.',
+        startDate: '2022',
+        endDate: '2022',
+        typeofDegree: 'Bootcamp',
+      },
+    ],
+  },
 }
 
 export default siteMetadata

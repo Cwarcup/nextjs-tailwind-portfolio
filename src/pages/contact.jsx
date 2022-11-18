@@ -88,10 +88,10 @@ const Contact = () => {
       <div className="pt-24 pb-8 lg:pt-32">
         <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl lg:text-6xl">
-            Get in touch
+            {siteMetadata.contactTitle}
           </h1>
           <p className="max-w-3xl mt-6 text-xl text-primaryText-500">
-            Contact me for a free 15 minute consultation.
+            {siteMetadata.contactSubtitle}
           </p>
         </div>
       </div>

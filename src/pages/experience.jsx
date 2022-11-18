@@ -5,8 +5,9 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { RiLinksLine } from 'react-icons/ri'
 import siteMetadata from '@/data/siteMetadata'
-// TODO: If you want to include the logo of the company, I suggesting importing the svg from Remix-Design's repo: https://github.com/Remix-Design/RemixIcon/tree/master/icons/Logos
 import logoApple from '@/images/logos/apple.svg'
+
+// TODO: If you want to include the logo of the company, I suggesting importing the svg from Remix-Design's repo: https://github.com/Remix-Design/RemixIcon/tree/master/icons/Logos
 
 // TODO: Add your own work experience here
 const experiences = [
@@ -38,28 +39,6 @@ const experiences = [
   },
 ]
 
-// TODO: Add your own education here
-const education = [
-  {
-    schoolName: 'University of British Columbia',
-    degree: 'Bachelor of Kinesiology',
-    description:
-      'Kinesiology is the study of human movement. It is a multidisciplinary field that draws on knowledge from the biological, physical, and social sciences to understand how people move and function. Kinesiology is a broad field that includes the study of human movement, health, and wellness. It is a multidisciplinary field that draws on knowledge from the biological, physical, and social sciences to understand how people move and function. Kinesiology is a broad field that includes the study of human movement, health, and wellness.',
-    startDate: '2013',
-    endDate: '2017',
-    typeofDegree: 'Bachelor Degree',
-  },
-  {
-    schoolName: 'Lighthouse Labs',
-    degree: 'Web Development',
-    description:
-      'Lighthouse Labs is a 12-week full-time web development bootcamp. The program is designed to teach students the skills needed to become a junior web developer. The program is designed to teach students the skills needed to become a junior web developer. The program is designed to teach students the skills needed to become a junior web developer.',
-    startDate: '2022',
-    endDate: '2022',
-    typeofDegree: 'Bootcamp',
-  },
-]
-
 export default function Resume() {
   return (
     <>
@@ -67,14 +46,13 @@ export default function Resume() {
         <title>Experience - {siteMetadata.author}</title>
         <meta
           name={`Work experience of ${siteMetadata.author}`}
-          content="Things I’ve made trying to put my dent in the universe."
+          content={siteMetadata.experience.title}
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title={siteMetadata.experience.title}
+        intro={siteMetadata.experience.intro}
       >
-        {/* work experience section */}
         <h2 className="mb-6 text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-4xl">
           Work Experience
         </h2>
@@ -113,8 +91,7 @@ export default function Resume() {
             </Card>
           ))}
         </ul>
-        {/* END of work experience section */}
-        {/* education section*/}
+
         <div className="relative max-w-lg mx-auto mt-24 lg:max-w-7xl">
           <div>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-4xl">
@@ -122,7 +99,7 @@ export default function Resume() {
             </h2>
           </div>
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-            {education.map((item, index) => (
+            {siteMetadata.experience.education.map((item, index) => (
               <Card key={`education-${index}`}>
                 <p className="text-sm text-primaryText-600 dark:text-primaryText-400">
                   {item.startDate} - {item.endDate}
@@ -142,8 +119,6 @@ export default function Resume() {
             ))}
           </div>
         </div>
-
-        {/* END education */}
       </SimpleLayout>
     </>
   )

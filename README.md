@@ -1,4 +1,4 @@
-# Nextjs 13 Tailwind Portfolio Starter
+# Nextjs Tailwind Personal Website
 
 This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) starter template intended to be used as a portfolio or personal website. It comes out of the box configured with the latest technologies, tools, and best practices. It's built to be easily configured, customized and extended. It's also fully responsive and mobile friendly.
 
@@ -11,7 +11,7 @@ This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com
 📈More screenshots
 </summary>
 <div align="center">
-<img src="https://media3.giphy.com/media/jJ3Tizd1zbRsYgasra/giphy.gif?cid=790b7611e2ab8971557b3bf7740374cdfa608674ad965d4c&rid=giphy.gif&ct=g" width="400">
+  <img src="https://media3.giphy.com/media/jJ3Tizd1zbRsYgasra/giphy.gif?cid=790b7611e2ab8971557b3bf7740374cdfa608674ad965d4c&rid=giphy.gif&ct=g" width="400">
 
 <img src="https://media3.giphy.com/media/PCqti2fs12Rc8V0Kta/giphy.gif?cid=790b76111bc5135ee5390490089fe327eccde82265e5e132&rid=giphy.gif&ct=g" width="400">
 
@@ -20,11 +20,35 @@ cid=790b76111bc5135ee5390490089fe327eccde82265e5e132&rid=giphy.gif&ct=g" width="
 
 
 <img src="https://media0.giphy.com/media/1WMjsePrPDcGxkzt0s/giphy.gif?cid=790b7611018b6f457646ca5f26fa956ec230190e3d3ef179&rid=giphy.gif&ct=g" width="400">
+
 </div>
-
-
-
 </details>
+
+It's built with the latest technologies and tools, fully responsive and mobile friendly, and has a built in dark/light mode, so you can be sure that your website will look great on any device.
+
+Inside of `data/siteMetadata.js` you'll find a JSON object to easy change the websites data. You can add your name, title, description, social media links, and more. 
+
+```js
+const siteMetadata = {
+  title: 'Best Nextjs Tailwind Portfolio',
+  description:
+    'This is where you can learn about me and my work. I am a full stack developer and I love to build things.',
+  author: 'Curtis Warcup',
+  authorHeadline: 'Full Stack Developer, Open Source Enthusiast',
+  authorAbout:
+    "Hi, I'm Curtis, a full stack developer. I created this to help my mom create a website for all her crazy business ideas. I hope you like it!",
+  authorAboutExtended:
+    "Curtis is a Canadian-born, living in beautify Vancouver, BC. \n \n In his personal life, Curtis is an avid cyclist and health nut. He enjoys making weekly meal preps and running with his dog. When he's not coding, exercising, or cooking, Curtis can be found in various mechanical keyboard enthusiast forums, scoping out his next purchase.",
+  socials: {
+    twitter: 'https://twitter.com/curtiswarcup',
+    github: 'https://github.com/Cwarcup',
+    linkedin: 'https://www.linkedin.com/in/curtiswarcup/',
+    instagram: 'https://www.instagram.com/curtiswarcup/',
+    facebook: 'https://www.facebook.com/curtiswarcup',
+  },
+  //...
+}
+```
 
 ## Getting Started
 

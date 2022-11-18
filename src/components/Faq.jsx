@@ -3,18 +3,24 @@ import { motion } from 'framer-motion'
 
 const faqs = [
   {
-    question: 'How do you make holy water?',
+    question: 'What flour is the best for pizza dough?',
     answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+      'You can make pizza with bread flour or all-purpose flour. Bread flour is the best option because it has a higher protein content which means when it’s mixed with water, it has more gluten in the dough. Gluten is what makes the dough stretchy and gives it a chewier crust.',
   },
   {
-    question: 'What will your results be?',
+    question: 'Can I use a rolling pin, or is that cheating?',
     answer:
-      'You will see who you are when you can step away from the cultural & social pressures and ideas of success, and decide what success is for you and how you want to claim it &  live it.',
+      'Professional pizzaiolos are experts in stretchy and throwing dough, and the more you practice, you will be able to. But there is no shame in using a rolling pin as you learn about the best way to stretch your dough..',
   },
   {
-    question: 'What is the best way to contact you?',
-    answer: 'You can email me ☺️',
+    question: 'How to make a pizza without cheese?',
+    answer:
+      'What is wrong with you? Just kidding. Cheeseless pizza is fairly new, but it’s gaining popularity for those with dietary conditions or even some vegans. You can use cashew cheese or try some of the non-dairy shreds available in most supermarkets. Nutritional yeast is a common product that has a nutty, cheesy taste. Or you could skip the cheese and go veggie-heavy.',
+  },
+  {
+    question: 'Should I use fresh tomatoes or canned?',
+    answer:
+      'According to the experts, canned tomatoes are best for making pizza sauce. Fresh tomatoes are fine when in season, but they are often too watery, and the flavor is inconsistent.',
   },
 ]
 
@@ -49,9 +55,7 @@ const Faq = () => {
                   <dt className="text-lg font-medium leading-6 text-primaryText-800 dark:text-primaryText-100">
                     {faq.question}
                   </dt>
-                  <dd
-                    className="mt-2 text-base text-primaryText-600 dark:text-primaryText-400 "
-                  >
+                  <dd className="mt-2 text-base text-primaryText-600 dark:text-primaryText-400 ">
                     {faq.answer}
                   </dd>
                 </div>

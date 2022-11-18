@@ -70,6 +70,7 @@ const Offerings = () => {
                   alt={siteMetadata.offerings[0].title}
                   width={2560}
                   height={1536}
+                  title={siteMetadata.offerings[0].imageAttribution}
                 />
               </div>
             </div>
@@ -110,9 +111,10 @@ const Offerings = () => {
                 <Image
                   className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                   src={siteMetadata.offerings[1].imgUrl}
-                  alt={siteMetadata.offerings[1].title}
+                  alt={siteMetadata.offerings[1].imageAttribution}
                   width={2560}
                   height={1536}
+                  title={siteMetadata.offerings[1].imageAttribution}
                 />
               </div>
             </div>
