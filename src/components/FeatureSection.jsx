@@ -20,7 +20,7 @@ const FeatureSection = () => {
     <div className="pb-24">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="sm:text-center">
-          <h2 className="text-lg font-semibold leading-8 text-indigo-600">
+          <h2 className="text-lg font-semibold leading-8 text-accent-600">
             Offerings
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-primaryText-900 sm:text-4xl">
@@ -42,7 +42,7 @@ const FeatureSection = () => {
                 key={feature.name}
                 className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row"
               >
-                <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-xl sm:shrink-0">
+                <div className="flex items-center justify-center w-12 h-12 text-white rounded-xl bg-accent-500 sm:shrink-0">
                   <feature.icon className="w-8 h-8" aria-hidden="true" />
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">

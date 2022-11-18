@@ -105,7 +105,7 @@ const Contact = () => {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Contact information */}
-              <div className="relative px-6 py-10 overflow-hidden rounded-lg bg-gradient-to-b from-violet-500 to-violet-600 sm:px-10 xl:p-12">
+              <div className="relative px-6 py-10 overflow-hidden rounded-lg bg-gradient-to-b from-accent-500 to-accent-600 sm:px-10 xl:p-12">
                 {/* Decorative angle backgrounds */}
                 <div
                   className="absolute inset-0 pointer-events-none sm:hidden"
@@ -209,7 +209,7 @@ const Contact = () => {
                 <h3 className="text-lg font-medium text-white">
                   Contact information
                 </h3>
-                <p className="max-w-3xl mt-6 text-base text-violet-50">
+                <p className="max-w-3xl mt-6 text-base text-accent-50">
                   Please contact me with any questions or comments you may have.
                   You can also schedule a service through the form below.
                 </p>
@@ -217,9 +217,9 @@ const Contact = () => {
                   <dt>
                     <span className="sr-only">Phone number</span>
                   </dt>
-                  <dd className="flex text-base text-violet-50">
+                  <dd className="flex text-base text-accent-50">
                     <RiPhoneLine
-                      className="flex-shrink-0 w-6 h-6 text-violet-200"
+                      className="flex-shrink-0 w-6 h-6 text-accent-200"
                       aria-hidden="true"
                     />
                     <span className="ml-3">{siteMetadata.phoneNumber}</span>
@@ -227,9 +227,9 @@ const Contact = () => {
                   <dt>
                     <span className="sr-only">Email</span>
                   </dt>
-                  <dd className="flex text-base text-violet-50">
+                  <dd className="flex text-base text-accent-50">
                     <RiMailLine
-                      className="flex-shrink-0 w-6 h-6 text-violet-200"
+                      className="flex-shrink-0 w-6 h-6 text-accent-200"
                       aria-hidden="true"
                     />
                     <span className="ml-3">{siteMetadata.email}</span>
@@ -238,7 +238,7 @@ const Contact = () => {
                 <ul role="list" className="flex mt-8 space-x-12">
                   <li>
                     <Link
-                      className="text-violet-200 hover:text-violet-100"
+                      className="text-accent-200 hover:text-accent-100"
                       href={siteMetadata.socials.facebook}
                     >
                       <span className="sr-only">Facebook</span>
@@ -258,7 +258,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <Link
-                      className="text-violet-200 hover:text-violet-100"
+                      className="text-accent-200 hover:text-accent-100"
                       href={siteMetadata.socials.github}
                     >
                       <span className="sr-only">GitHub</span>
@@ -278,7 +278,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <Link
-                      className="text-violet-200 hover:text-violet-100"
+                      className="text-accent-200 hover:text-accent-100"
                       href={siteMetadata.socials.twitter}
                     >
                       <span className="sr-only">Twitter</span>
@@ -321,7 +321,7 @@ const Contact = () => {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-violet-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
                       />
                     </div>
                   </div>
@@ -340,7 +340,7 @@ const Contact = () => {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-violet-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
                       />
                     </div>
                   </div>
@@ -359,7 +359,7 @@ const Contact = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-violet-500 focus:ring-violet-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-violet-500"
                       />
                     </div>
                   </div>

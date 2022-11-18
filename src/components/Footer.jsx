@@ -6,7 +6,7 @@ function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
+      className="transition hover:text-accent-500 dark:hover:text-accent-400"
     >
       {children}
     </Link>
@@ -17,7 +17,7 @@ export function Footer() {
   return (
     <footer className="mt-16">
       <Container.Outer>
-        <div className="border-t border-primaryText-100 pt-10 pb-16 dark:border-primaryText-700/40">
+        <div className="pt-10 pb-16 border-t border-primaryText-100 dark:border-primaryText-700/40">
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-primaryText-800 dark:text-primaryText-200">

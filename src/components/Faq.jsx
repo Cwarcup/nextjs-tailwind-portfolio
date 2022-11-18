@@ -30,7 +30,7 @@ const Faq = () => {
             Can’t find the answer you’re looking for? Reach out to{' '}
             <a
               href={`mailto:${siteMetadata.email}`}
-              className="font-medium text-indigo-600 hover:text-indigo-500"
+              className="font-medium text-accent-600 hover:text-accent-500"
             >
               me
             </a>

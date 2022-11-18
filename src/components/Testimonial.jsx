@@ -2,7 +2,7 @@ import Image from 'next/image'
 const Testimonial = () => {
   return (
     <div className="pt-16 lg:py-24 ">
-      <div className="pb-16 bg-fixed bg-center bg-cover bg-gradient-to-b from-red-500 to-blue-500 lg:relative lg:z-10 lg:pb-0">
+      <div className="pb-16 bg-fixed bg-center bg-cover bg-gradient-to-b from-gradientStart-500 to-gradientEnd-500 lg:relative lg:z-10 lg:pb-0">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
           <div className="relative lg:-my-8">
             <div
@@ -43,7 +43,7 @@ const Testimonial = () => {
                   <p className="text-base font-medium text-white">
                     Judith Black
                   </p>
-                  <p className="text-base font-medium text-indigo-100">
+                  <p className="text-base font-medium text-accent-100">
                     CEO at PureInsights
                   </p>
                 </footer>
