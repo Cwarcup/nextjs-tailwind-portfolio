@@ -43,7 +43,7 @@ const About = () => {
                 src={avatarImage}
                 alt="picture of the author"
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="object-cover aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
+                className="object-cover aspect-square rounded-2xl bg-zinc-100 dark:bg-zinc-800"
               />
             </div>
           </div>

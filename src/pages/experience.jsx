@@ -101,7 +101,7 @@ export default function Resume() {
               </h2>
               <Card.Description>
                 {experience.description.map((item, index) => (
-                  <li className="list-disc" key={`description-${index}`}>
+                  <li className="ml-4 list-disc" key={`description-${index}`}>
                     {item}
                   </li>
                 ))}
@@ -123,11 +123,11 @@ export default function Resume() {
           </div>
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {education.map((item, index) => (
-              <div key={`education-${index}`}>
+              <Card key={`education-${index}`}>
                 <p className="text-sm text-gray-500">
                   {item.startDate} - {item.endDate}
                 </p>
-                <a href="#" className="block mt-2">
+                <div className="block mt-2">
                   <p className="text-xl font-semibold text-gray-900">
                     {item.degree}
                   </p>
@@ -137,8 +137,8 @@ export default function Resume() {
                   <p className="mt-3 text-base text-gray-500">
                     {item.description}
                   </p>
-                </a>
-              </div>
+                </div>
+              </Card>
             ))}
           </div>
         </div>

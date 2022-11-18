@@ -63,3 +63,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 This project uses [React Icons](https://react-icons.github.io/react-icons/) for icons, specifically the [Remix Design Icons](https://react-icons.github.io/react-icons/icons?name=ri). If you need the svg files, you can find them [here](https://github.com/Remix-Design/RemixIcon/tree/master/icons).
 
+### Favicons and Head Tags
+
+Use [Favicon.io](https://favicon.io/favicon-converter/) to generate your favicon and add the generated code to the `pages/_document.js` file. Make sure you download the generated files and add them to the `public` folder. You will need to create an image for [Favicon.io](https://favicon.io/favicon-converter/) to use. I recommend using [Canva](https://www.canva.com/) to create your image.

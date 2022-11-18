@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser'
 import Link from 'next/link'
+import Head from 'next/head'
 import { useState } from 'react'
 import { RiPhoneLine, RiMailLine } from 'react-icons/ri'
 import siteMetadata from '@/data/siteMetadata'
@@ -79,6 +80,10 @@ const Contact = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact - {siteMetadata.author}</title>
+        <meta name="description" content="Contact" />
+      </Head>
       {/* Header */}
       <div className="pt-24 pb-8 lg:pt-32">
         <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">

@@ -1,4 +1,6 @@
 import { RiMentalHealthLine, RiOpenArmLine } from 'react-icons/ri'
+
+// TODO: Add your own features here. Make sure to add the icon from Remix-Design's repo:
 const features = [
   {
     name: 'Coaching',
