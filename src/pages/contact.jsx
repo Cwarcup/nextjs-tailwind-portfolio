@@ -87,7 +87,7 @@ const Contact = () => {
       {/* Header */}
       <div className="pt-24 pb-8 lg:pt-32">
         <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold tracking-tight text-primaryText-900 sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl lg:text-6xl">
             Get in touch
           </h1>
           <p className="max-w-3xl mt-6 text-xl text-primaryText-500">
@@ -99,7 +99,7 @@ const Contact = () => {
       {/* Contact section */}
       <section className="relative" aria-labelledby="contact-heading">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative bg-white rounded-lg shadow-xl">
+          <div className="relative bg-white rounded-lg shadow-xl dark:bg-slate-900">
             <h2 id="contact-heading" className="sr-only">
               Contact us
             </h2>
@@ -206,10 +206,10 @@ const Contact = () => {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium text-white">
+                <h3 className="text-lg font-medium text-white dark:text-slate-800">
                   Contact information
                 </h3>
-                <p className="max-w-3xl mt-6 text-base text-accent-50">
+                <p className="max-w-3xl mt-6 text-base text-white dark:text-slate-800">
                   Please contact me with any questions or comments you may have.
                   You can also schedule a service through the form below.
                 </p>
@@ -217,9 +217,9 @@ const Contact = () => {
                   <dt>
                     <span className="sr-only">Phone number</span>
                   </dt>
-                  <dd className="flex text-base text-accent-50">
+                  <dd className="flex text-base text-white dark:text-slate-800">
                     <RiPhoneLine
-                      className="flex-shrink-0 w-6 h-6 text-accent-200"
+                      className="flex-shrink-0 w-6 h-6 text-accent-200 dark:text-slate-800"
                       aria-hidden="true"
                     />
                     <span className="ml-3">{siteMetadata.phoneNumber}</span>
@@ -227,9 +227,9 @@ const Contact = () => {
                   <dt>
                     <span className="sr-only">Email</span>
                   </dt>
-                  <dd className="flex text-base text-accent-50">
+                  <dd className="flex text-base text-white dark:text-slate-800">
                     <RiMailLine
-                      className="flex-shrink-0 w-6 h-6 text-accent-200"
+                      className="flex-shrink-0 w-6 h-6 text-accent-200 dark:text-slate-800"
                       aria-hidden="true"
                     />
                     <span className="ml-3">{siteMetadata.email}</span>
@@ -238,7 +238,7 @@ const Contact = () => {
                 <ul role="list" className="flex mt-8 space-x-12">
                   <li>
                     <Link
-                      className="text-accent-200 hover:text-accent-100"
+                      className="text-accent-200 hover:text-accent-100 dark:text-slate-800 dark:hover:text-slate-700"
                       href={siteMetadata.socials.facebook}
                     >
                       <span className="sr-only">Facebook</span>
@@ -258,7 +258,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <Link
-                      className="text-accent-200 hover:text-accent-100"
+                      className="text-accent-200 hover:text-accent-100 dark:text-slate-800 dark:hover:text-slate-700"
                       href={siteMetadata.socials.github}
                     >
                       <span className="sr-only">GitHub</span>
@@ -278,7 +278,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <Link
-                      className="text-accent-200 hover:text-accent-100"
+                      className="text-accent-200 hover:text-accent-100 dark:text-slate-800 dark:hover:text-slate-700"
                       href={siteMetadata.socials.twitter}
                     >
                       <span className="sr-only">Twitter</span>
@@ -296,8 +296,8 @@ const Contact = () => {
               </div>
 
               {/* Contact form */}
-              <div className="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
-                <h3 className="text-lg font-medium text-primaryText-900">
+              <div className="px-6 py-10 bg-white rounded-lg dark:bg-slate-900 sm:px-10 lg:col-span-2 xl:p-12">
+                <h3 className="text-lg font-medium text-primaryText-800 dark:text-primaryText-100">
                   Send me a message
                 </h3>
                 {/* //TODO handle submit */}
@@ -309,7 +309,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="first-name"
-                      className="block text-sm font-medium text-primaryText-900"
+                      className="block text-sm font-medium text-primaryText-800 dark:text-primaryText-100"
                     >
                       First name
                     </label>
@@ -321,14 +321,14 @@ const Contact = () => {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
                   <div>
                     <label
                       htmlFor="last-name"
-                      className="block text-sm font-medium text-primaryText-900"
+                      className="block text-sm font-medium text-primaryText-800 dark:text-primaryText-100"
                     >
                       Last name
                     </label>
@@ -340,14 +340,14 @@ const Contact = () => {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-primaryText-900"
+                      className="block text-sm font-medium text-primaryText-800 dark:text-primaryText-100"
                     >
                       Email
                     </label>
@@ -359,7 +359,7 @@ const Contact = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
@@ -367,7 +367,7 @@ const Contact = () => {
                     <div className="flex justify-between">
                       <label
                         htmlFor="phone"
-                        className="block text-sm font-medium text-primaryText-900"
+                        className="block text-sm font-medium text-primaryText-800 dark:text-primaryText-100"
                       >
                         Phone
                       </label>
@@ -386,7 +386,7 @@ const Contact = () => {
                         name="phone"
                         id="phone"
                         autoComplete="tel"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                         aria-describedby="phone-optional"
                       />
                     </div>
@@ -394,7 +394,7 @@ const Contact = () => {
                   <div className="sm:col-span-2">
                     <label
                       htmlFor="subject"
-                      className="block text-sm font-medium text-primaryText-900"
+                      className="block text-sm font-medium text-primaryText-800 dark:text-primaryText-100"
                     >
                       Subject
                     </label>
@@ -405,7 +405,7 @@ const Contact = () => {
                         type="text"
                         name="subject"
                         id="subject"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
@@ -413,7 +413,7 @@ const Contact = () => {
                     <div className="flex justify-between">
                       <label
                         htmlFor="message"
-                        className="block text-sm font-medium text-primaryText-900"
+                        className="block text-sm font-medium text-primaryText-800 dark:text-primaryText-100"
                       >
                         Message
                       </label>
@@ -430,7 +430,7 @@ const Contact = () => {
                         id="message"
                         name="message"
                         rows={4}
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-300 text-primaryText-900 focus:border-accent-500 focus:ring-accent-500"
+                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                         aria-describedby="message-max"
                         defaultValue={''}
                       />
@@ -439,7 +439,7 @@ const Contact = () => {
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 sm:w-auto"
+                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 dark:text-slate-800 sm:w-auto"
                     >
                       Submit
                     </button>

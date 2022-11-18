@@ -33,9 +33,7 @@ module.exports = {
         accent: colors.sky,
         gradientStart: colors.sky,
         gradientEnd: colors.stone,
-        // primarybackground
-        // secondaryText
-        // accent
+        
       },
     },
   },
