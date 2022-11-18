@@ -15,10 +15,11 @@ const Testimonial = () => {
               <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <Image
                   className="object-cover lg:h-full lg:w-full"
-                  src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                  src={siteMetadata.testimonial.imgUrl}
                   alt="testimonials"
                   width={500}
                   height={500}
+                  title={siteMetadata.testimonial.imageAttribution}
                 />
               </div>
             </div>

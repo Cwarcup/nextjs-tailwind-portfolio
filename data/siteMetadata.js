@@ -55,6 +55,9 @@ const siteMetadata = {
       '“Curtis is a great pizza delivery person. He helped me to understand my strengths and weaknesses and how to improve my performance. I would highly recommend him to anyone looking to improve their performance.”',
     author: 'Elon Musk',
     authorTitle: 'CEO at Dumpster Fire, Inc.',
+    imgUrl:
+      'https://images.unsplash.com/photo-1579047917338-a6a69144fe63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
+    imageAttribution: 'Photo by @johanemanuel on Unsplash',
   },
   featureSection: {
     title: 'Why Choose Me?',
