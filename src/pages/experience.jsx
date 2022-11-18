@@ -84,17 +84,17 @@ export default function Resume() {
         >
           {experiences.map((experience, index) => (
             <Card key={index}>
-              <div className="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-primaryText-800/5 ring-1 ring-primaryText-900/5 dark:border dark:border-primaryText-700/50 dark:bg-primaryText-800 dark:ring-0">
                 <Image
                   src={experience.logo}
                   alt={experience.company}
-                  className="w-8 h-8"
+                  className="h-8 w-8"
                   unoptimized
                   width={32}
                   height={32}
                 />
               </div>
-              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+              <h2 className="mt-6 text-base font-semibold text-primaryText-800 dark:text-primaryText-100">
                 <Card.Link href={experience.link.url}>
                   {experience.name}
                 </Card.Link>
@@ -106,8 +106,8 @@ export default function Resume() {
                   </li>
                 ))}
               </Card.Description>
-              <p className="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
-                <RiLinksLine className="flex-none w-6 h-6" />
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-primaryText-400 transition group-hover:text-teal-500 dark:text-primaryText-200">
+                <RiLinksLine className="h-6 w-6 flex-none" />
                 <span className="ml-2">{experience.link.label}</span>
               </p>
             </Card>
@@ -115,7 +115,7 @@ export default function Resume() {
         </ul>
         {/* END of work experience section */}
         {/* education section*/}
-        <div className="relative max-w-lg mx-auto mt-24 lg:max-w-7xl">
+        <div className="relative mx-auto mt-24 max-w-lg lg:max-w-7xl">
           <div>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Education
@@ -127,7 +127,7 @@ export default function Resume() {
                 <p className="text-sm text-gray-500">
                   {item.startDate} - {item.endDate}
                 </p>
-                <div className="block mt-2">
+                <div className="mt-2 block">
                   <p className="text-xl font-semibold text-gray-900">
                     {item.degree}
                   </p>

@@ -28,10 +28,10 @@ const Offerings = () => {
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                  <h2 className="text-3xl font-bold tracking-tight text-primaryText-900">
                     {siteMetadata.offerings[0].title}
                   </h2>
-                  <p className="mt-4 text-lg text-gray-500">
+                  <p className="mt-4 text-lg text-primaryText-500">
                     {siteMetadata.offerings[0].description}
                   </p>
                   <div className="mt-6">
@@ -44,16 +44,16 @@ const Offerings = () => {
                   </div>
                 </div>
               </div>
-              <div className="pt-6 mt-8 border-t border-gray-200">
+              <div className="pt-6 mt-8 border-t border-primaryText-200">
                 <blockquote>
                   <div>
-                    <p className="text-base text-gray-500">
+                    <p className="text-base text-primaryText-500">
                       {siteMetadata.offerings[0].testimonial}
                     </p>
                   </div>
                   <footer className="mt-3">
                     <div className="flex items-center space-x-3">
-                      <div className="text-base font-medium text-gray-700">
+                      <div className="text-base font-medium text-primaryText-700">
                         {siteMetadata.offerings[0].testimonialAuthor},{' '}
                         {siteMetadata.offerings[0].testimonialAuthorTitle}
                       </div>
@@ -88,10 +88,10 @@ const Offerings = () => {
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                  <h2 className="text-3xl font-bold tracking-tight text-primaryText-900">
                     {siteMetadata.offerings[1].title}
                   </h2>
-                  <p className="mt-4 text-lg text-gray-500">
+                  <p className="mt-4 text-lg text-primaryText-500">
                     {siteMetadata.offerings[1].description}
                   </p>
                   <div className="mt-6">

@@ -39,10 +39,10 @@ const Home = () => {
       </Head>
       <Container className="mt-9">
         <div className="grid max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl">
             {siteMetadata.authorHeadline}
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base text-primaryText-600 dark:text-primaryText-400">
             {siteMetadata.authorAbout}
           </p>
           <div className="flex gap-6 mt-6">

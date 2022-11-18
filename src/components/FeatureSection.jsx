@@ -23,10 +23,10 @@ const FeatureSection = () => {
           <h2 className="text-lg font-semibold leading-8 text-indigo-600">
             Offerings
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-primaryText-900 sm:text-4xl">
             One day you finally knew what you had to do, and began.
           </p>
-          <p className="max-w-2xl mx-auto mt-6 text-lg leading-8 text-gray-600">
+          <p className="max-w-2xl mx-auto mt-6 text-lg leading-8 text-primaryText-600">
             My vision is to guide clients towards empowerment and self-efficacy.
             I am honored to be your companion on the path of healing and
             self-discovery. Whether your goal is to excel in your career, thrive
@@ -46,10 +46,10 @@ const FeatureSection = () => {
                   <feature.icon className="w-8 h-8" aria-hidden="true" />
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
-                  <p className="text-lg font-semibold leading-8 text-gray-900">
+                  <p className="text-lg font-semibold leading-8 text-primaryText-900">
                     {feature.name}
                   </p>
-                  <p className="mt-2 text-base leading-7 text-gray-600">
+                  <p className="mt-2 text-base leading-7 text-primaryText-600">
                     {feature.description}
                   </p>
                 </div>
