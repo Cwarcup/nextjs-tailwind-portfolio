@@ -3,7 +3,7 @@
 This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) starter template intended to be used as a portfolio or personal website. It comes out of the box configured with the latest technologies, tools, and best practices. It's built to be easily configured, customized and extended. It's also fully responsive and mobile friendly.
 
 <div align="center">
-  <img src="https://media2.giphy.com/media/JElTTiwURbzY3RDQfm/giphy.gif?cid=790b76119f2dfe7e7d227feb879cb01171dea8e74b238bfd&rid=giphy.gif&ct=g" width="400">
+  <img src="https://media4.giphy.com/media/9qO83ZRo0IG2RcGrOP/giphy.gif?cid=790b76115b94a9941d04eff5fe310e25584d922e850b91f5&rid=giphy.gif&ct=g" width="400">
 </div>
 
 <details>
@@ -11,15 +11,13 @@ This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com
 📈More screenshots
 </summary>
 <div align="center">
-  <img src="https://media3.giphy.com/media/jJ3Tizd1zbRsYgasra/giphy.gif?cid=790b7611e2ab8971557b3bf7740374cdfa608674ad965d4c&rid=giphy.gif&ct=g" width="400">
+  <img src="https://media4.giphy.com/media/Ac79WRgsMahLi7Triv/giphy.gif?cid=790b761149bf09c22f0239c9611d5be43cf4dbe76ef772df&rid=giphy.gif&ct=g" width="400">
+
+  <img src="https://media2.giphy.com/media/KPqLRkkxe8W5eQIC7T/giphy.gif?cid=790b76114325384366e445cb4d9ee87225a60978fa9800e9&rid=giphy.gif&ct=g" width="400">
 
 <img src="https://media3.giphy.com/media/PCqti2fs12Rc8V0Kta/giphy.gif?cid=790b76111bc5135ee5390490089fe327eccde82265e5e132&rid=giphy.gif&ct=g" width="400">
 
-<img src="https://media3.giphy.com/media/PCqti2fs12Rc8V0Kta/giphy.gif?
-cid=790b76111bc5135ee5390490089fe327eccde82265e5e132&rid=giphy.gif&ct=g" width="400">
-
-
-<img src="https://media0.giphy.com/media/1WMjsePrPDcGxkzt0s/giphy.gif?cid=790b7611018b6f457646ca5f26fa956ec230190e3d3ef179&rid=giphy.gif&ct=g" width="400">
+<img src="https://media0.giphy.com/media/W2H4Oordn3bfjey4Q5/giphy.gif?cid=790b76118c152a69e856643262d56de1b913471ba0346912&rid=giphy.gif&ct=g" width="400">
 
 </div>
 </details>
