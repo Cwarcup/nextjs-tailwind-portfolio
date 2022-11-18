@@ -1,14 +1,10 @@
 import Head from 'next/head'
-
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
-import Faq from '@/components/Faq'
-import CallToAction from '@/components/CallToAction'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Faq from '@/components/Faq'
+import CallToAction from '@/components/CallToAction'
 import { RiMentalHealthLine, RiOpenArmLine } from 'react-icons/ri'
-
 import siteMetadata from '@/data/siteMetadata'
 
 const Offerings = () => {
