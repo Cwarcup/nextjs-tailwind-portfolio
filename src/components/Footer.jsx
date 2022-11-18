@@ -24,6 +24,7 @@ export function Footer() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/experience">Work Experience</NavLink>
                 <NavLink href="/offerings">Offerings</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
               </div>
               <p className="text-sm text-primaryText-400 dark:text-primaryText-500">
                 &copy; {new Date().getFullYear()} Curtis Warcup. All rights

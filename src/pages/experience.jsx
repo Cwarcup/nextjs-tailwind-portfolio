@@ -75,7 +75,7 @@ export default function Resume() {
         intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
       >
         {/* work experience section */}
-        <h2 className="mb-6 text-3xl font-bold tracking-tight text-primaryText-900 sm:text-4xl">
+        <h2 className="mb-6 text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-4xl">
           Work Experience
         </h2>
         <ul
@@ -117,24 +117,24 @@ export default function Resume() {
         {/* education section*/}
         <div className="relative max-w-lg mx-auto mt-24 lg:max-w-7xl">
           <div>
-            <h2 className="mb-6 text-3xl font-bold tracking-tight text-primaryText-900 sm:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-4xl">
               Education
             </h2>
           </div>
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {education.map((item, index) => (
               <Card key={`education-${index}`}>
-                <p className="text-sm text-primaryText-500">
+                <p className="text-sm text-primaryText-600 dark:text-primaryText-400">
                   {item.startDate} - {item.endDate}
                 </p>
                 <div className="block mt-2">
-                  <p className="text-xl font-semibold text-primaryText-900">
+                  <p className="text-xl font-semibold text-primaryText-800 dark:text-primaryText-100">
                     {item.degree}
                   </p>
-                  <p className="text-base font-semibold text-primaryText-800">
+                  <p className="text-base font-semibold text-primaryText-800 dark:text-primaryText-100">
                     {item.schoolName}
                   </p>
-                  <p className="mt-3 text-base text-primaryText-500">
+                  <p className="mt-3 text-base text-primaryText-600 dark:text-primaryText-400">
                     {item.description}
                   </p>
                 </div>

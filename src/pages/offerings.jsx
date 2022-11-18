@@ -28,32 +28,32 @@ const Offerings = () => {
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-primaryText-900">
+                  <h2 className="text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100">
                     {siteMetadata.offerings[0].title}
                   </h2>
-                  <p className="mt-4 text-lg text-primaryText-500">
+                  <p className="mt-4 text-lg text-primaryText-600 dark:text-primaryText-400">
                     {siteMetadata.offerings[0].description}
                   </p>
                   <div className="mt-6">
                     <Link
                       href="/contact"
-                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-600 hover:bg-accent-700"
+                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 dark:text-slate-800"
                     >
                       Get started
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="pt-6 mt-8 border-t border-primaryText-200">
+              <div className="pt-6 mt-8 border-t border-primaryText-100 dark:border-primaryText-700/40">
                 <blockquote>
                   <div>
-                    <p className="text-base text-primaryText-500">
+                    <p className="text-base text-primaryText-600 dark:text-primaryText-400">
                       {siteMetadata.offerings[0].testimonial}
                     </p>
                   </div>
                   <footer className="mt-3">
                     <div className="flex items-center space-x-3">
-                      <div className="text-base font-medium text-primaryText-700">
+                      <div className="text-base font-medium text-primaryText-500">
                         {siteMetadata.offerings[0].testimonialAuthor},{' '}
                         {siteMetadata.offerings[0].testimonialAuthorTitle}
                       </div>
@@ -88,16 +88,16 @@ const Offerings = () => {
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-primaryText-900">
+                  <h2 className="text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100">
                     {siteMetadata.offerings[1].title}
                   </h2>
-                  <p className="mt-4 text-lg text-primaryText-500">
+                  <p className="mt-4 text-lg text-primaryText-600 dark:text-primaryText-400">
                     {siteMetadata.offerings[1].description}
                   </p>
                   <div className="mt-6">
                     <Link
                       href="/contact"
-                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-600 hover:bg-accent-700"
+                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 dark:text-slate-800"
                     >
                       Get started
                     </Link>

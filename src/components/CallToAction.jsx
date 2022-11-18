@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const CallToAction = () => {
   return (
-    <div className="bg-accent-50 dark:bg-accent-900">
+    <div className="bg-accent-50 dark:bg-accent-800/50">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-primaryText-900 md:text-4xl">
           <span className="block text-primaryText-800 dark:text-primaryText-100">
