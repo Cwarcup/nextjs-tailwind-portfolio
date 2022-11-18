@@ -82,8 +82,8 @@ export default function Resume() {
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {experiences.map((experience) => (
-            <Card as="li" key={experience.name}>
+          {experiences.map((experience, index) => (
+            <Card key={index}>
               <div className="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
                   src={experience.logo}

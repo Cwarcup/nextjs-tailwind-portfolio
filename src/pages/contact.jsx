@@ -427,7 +427,6 @@ const Contact = () => {
                     </div>
                     <div className="mt-1">
                       <textarea
-                        value={message}
                         onChange={handleMessageChange}
                         id="message"
                         name="message"
