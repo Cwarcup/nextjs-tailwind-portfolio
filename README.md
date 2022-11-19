@@ -17,9 +17,7 @@ Visit the [demo](https://nextjs-tailwind-portfolio-cwarcup.vercel.app/).
 
   <img src="https://media2.giphy.com/media/KPqLRkkxe8W5eQIC7T/giphy.gif?cid=790b76114325384366e445cb4d9ee87225a60978fa9800e9&rid=giphy.gif&ct=g" width="400">
 
-<img src="https://media3.giphy.com/media/PCqti2fs12Rc8V0Kta/giphy.gif?cid=790b76111bc5135ee5390490089fe327eccde82265e5e132&rid=giphy.gif&ct=g" width="400">
-
-<img src="https://media0.giphy.com/media/W2H4Oordn3bfjey4Q5/giphy.gif?cid=790b76118c152a69e856643262d56de1b913471ba0346912&rid=giphy.gif&ct=g" width="400">
+  <img src="https://media0.giphy.com/media/W2H4Oordn3bfjey4Q5/giphy.gif?cid=790b76118c152a69e856643262d56de1b913471ba0346912&rid=giphy.gif&ct=g" width="400">
 
 </div>
 </details>
