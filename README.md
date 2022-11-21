@@ -150,3 +150,28 @@ For example, if you wanted to change the `primaryText` color to `blue`, you woul
   //...
 ```
 
+## Road map
+
+- [ ] Customize sections
+  - [X] Gerneral Info
+  - [ ] Images
+  - [ ] Heade sections
+  - [X] About section
+  - [ ] Resume section
+    - [ ] Experience section
+    - [ ] Education Section
+  - [ ] Projects sections
+  - [X] Contact Section
+    - [X] Contact Form with MailJS
+    - [x] Social links
+  - [ ] Footer customizations
+- [ ] Update `pages` to use next 13 `app`, `page`, and `layout` components.
+- [ ] Typescript support
+- [ ] Add a blog page and generate an RSS feed
+  - [ ] syntax highlighting
+  - [ ] markdown support
+- [ ] Add an e-commerce page
+- [ ] Database integration for e-commerce
+- [ ] Authentication for e-commerce
+- [ ] Project page
+- [ ] 
