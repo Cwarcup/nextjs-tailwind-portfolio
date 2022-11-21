@@ -24,6 +24,29 @@ const siteMetadata = {
     plausibleDataDomain: 'https://cwarcup.com/', // e.g. tailwind-nextjs-starter-blog.vercel.app
     googleAnalyticsId: 'G-XXXXXXX', // e.g. UA-000000-2 or G-XXXXXXX
   },
+  // TODO: Add the name of the navbar items and the corresponding page. Used in the Header and Footer components.
+  siteNavLinks: [
+    {
+      name: 'Home',
+      href: '/',
+    },
+    {
+      name: 'About',
+      href: '/about',
+    },
+    {
+      name: 'Experience',
+      href: '/experience',
+    },
+    {
+      name: 'Offerings',
+      href: '/offerings',
+    },
+    {
+      name: 'Contact',
+      href: '/contact',
+    },
+  ],
   siteRepo: 'https://github.com/Cwarcup/',
   offerings: [
     {

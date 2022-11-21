@@ -74,7 +74,7 @@ export default function Resume() {
               </div>
               <h2 className="mt-6 text-base font-semibold text-primaryText-800 dark:text-primaryText-100">
                 <Card.Link href={experience.link.url}>
-                  {experience.name}
+                  {experience.title} at {experience.company}
                 </Card.Link>
               </h2>
               <Card.Description>

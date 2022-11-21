@@ -7,68 +7,15 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
+import {
+  CloseIcon,
+  ChevronDownIcon,
+  SunIcon,
+  MoonIcon,
+} from '@/images/icons/NavIcons'
+import siteMetadata from '@/data/siteMetadata'
 
-function CloseIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function ChevronDownIcon(props) {
-  return (
-    <svg viewBox="0 0 8 6" aria-hidden="true" {...props}>
-      <path
-        d="M1.75 1.75 4 4.25l2.25-2.5"
-        fill="none"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function SunIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z" />
-      <path
-        d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
-        fill="none"
-      />
-    </svg>
-  )
-}
-
-function MoonIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
+// used to list items in mobile nav
 function MobileNavItem({ href, children }) {
   return (
     <li>
@@ -79,6 +26,7 @@ function MobileNavItem({ href, children }) {
   )
 }
 
+// mobile nav on small screens
 function MobileNavigation(props) {
   return (
     <Popover {...props}>
@@ -121,12 +69,13 @@ function MobileNavigation(props) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 text-base divide-y divide-primaryText-100 text-primaryText-800 dark:divide-primaryText-100/5 dark:text-primaryText-300">
-                {/* // TODO: customize nav links
-                 */}
-                <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/experience">Experience</MobileNavItem>
-                <MobileNavItem href="/offerings">Offerings</MobileNavItem>
-                <MobileNavItem href="/contact">Contact</MobileNavItem>
+                {siteMetadata.siteNavLinks.map((link) => {
+                  return (
+                    <MobileNavItem key={link.href} href={link.href}>
+                      {link.name}
+                    </MobileNavItem>
+                  )
+                })}
               </ul>
             </nav>
           </Popover.Panel>
@@ -136,6 +85,7 @@ function MobileNavigation(props) {
   )
 }
 
+// used to list items in desktop nav
 function NavItem({ href, children }) {
   let isActive = useRouter().pathname === href
 
@@ -159,21 +109,24 @@ function NavItem({ href, children }) {
   )
 }
 
+// desktop nav on large screens
 function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex px-3 text-sm font-medium rounded-full shadow-lg bg-white/90 text-primaryText-800 shadow-primaryText-800/5 ring-1 ring-primaryText-900/5 backdrop-blur dark:bg-primaryText-800/90 dark:text-primaryText-200 dark:ring-white/10">
-        {/* // TODO: customize nav links
-         */}
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/experience">Experience</NavItem>
-        <NavItem href="/offerings">Offerings</NavItem>
-        <NavItem href="/contact">Contact</NavItem>
+        {siteMetadata.siteNavLinks.map((link) => {
+          return (
+            <NavItem key={link.href} href={link.href}>
+              {link.name}
+            </NavItem>
+          )
+        })}
       </ul>
     </nav>
   )
 }
 
+// used to transition between light and dark mode
 function ModeToggle() {
   function disableTransitionsTemporarily() {
     document.documentElement.classList.add('[&_*]:!transition-none')
@@ -209,7 +162,8 @@ function ModeToggle() {
   )
 }
 
-function clamp(number, a, b) {
+// helper to help with scaling of avatar when user scrolls down
+function scrollHeight(number, a, b) {
   let min = Math.min(a, b)
   let max = Math.max(a, b)
   return Math.min(Math.max(number, min), max)
@@ -270,7 +224,7 @@ export function Header() {
 
     function updateHeaderStyles() {
       let { top, height } = headerRef.current.getBoundingClientRect()
-      let scrollY = clamp(
+      let scrollY = scrollHeight(
         window.scrollY,
         0,
         document.body.scrollHeight - window.innerHeight
@@ -318,10 +272,11 @@ export function Header() {
       let scrollY = downDelay - window.scrollY
 
       let scale = (scrollY * (fromScale - toScale)) / downDelay + toScale
-      scale = clamp(scale, fromScale, toScale)
+      scale = scrollHeight(scale, fromScale, toScale)
+      console.log({ scale })
 
       let x = (scrollY * (fromX - toX)) / downDelay + toX
-      x = clamp(x, fromX, toX)
+      x = scrollHeight(x, fromX, toX)
 
       setProperty(
         '--avatar-image-transform',

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-
 import { Container } from '@/components/Container'
+import siteMetadata from '@/data/siteMetadata'
 
 function NavLink({ href, children }) {
   return (
@@ -21,10 +21,11 @@ export function Footer() {
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-primaryText-800 dark:text-primaryText-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/experience">Work Experience</NavLink>
-                <NavLink href="/offerings">Offerings</NavLink>
-                <NavLink href="/contact">Contact</NavLink>
+                {siteMetadata.siteNavLinks.map((link, index) => (
+                  <NavLink key={link.href} href={link.href}>
+                    {link.name}
+                  </NavLink>
+                ))}
               </div>
               <p className="text-sm text-primaryText-400 dark:text-primaryText-500">
                 &copy; {new Date().getFullYear()} Curtis Warcup. All rights
