@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react'
 
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 
-import '@/styles/tailwind.css'
+import '../styles/tailwind.css'
 import 'focus-visible'
 
 function usePrevious(value) {
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps, router }) {
           <div className="w-full bg-white ring-1 ring-primaryText-100 dark:bg-primaryText-900 dark:ring-primaryText-300/20" />
         </div>
       </div>
-      <div className="relative">
+      <div className="flex h-screen flex-col justify-between">
         <Header />
         <main>
           <Component previousPathname={previousPathname} {...pageProps} />

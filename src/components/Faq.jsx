@@ -1,4 +1,4 @@
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '../../data/siteMetadata'
 import { motion } from 'framer-motion'
 
 const faqs = [
@@ -26,7 +26,7 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-20 lg:px-8">
+    <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
       <div className="lg:grid lg:grid-cols-3 lg:gap-8">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100">

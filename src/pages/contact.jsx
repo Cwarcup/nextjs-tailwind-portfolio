@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react'
 import { RiPhoneLine, RiMailLine } from 'react-icons/ri'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '../../data/siteMetadata'
 
 const Contact = () => {
   const [firstName, setFirstName] = useState('')
@@ -86,11 +86,11 @@ const Contact = () => {
       </Head>
       {/* Header */}
       <div className="pt-24 pb-8 lg:pt-32">
-        <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl lg:text-6xl">
             {siteMetadata.contactTitle}
           </h1>
-          <p className="max-w-3xl mt-6 text-xl text-primaryText-500">
+          <p className="mt-6 max-w-3xl text-xl text-primaryText-500">
             {siteMetadata.contactSubtitle}
           </p>
         </div>
@@ -98,21 +98,21 @@ const Contact = () => {
 
       {/* Contact section */}
       <section className="relative" aria-labelledby="contact-heading">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative bg-white rounded-lg shadow-xl dark:bg-slate-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-lg bg-white shadow-xl dark:bg-slate-900">
             <h2 id="contact-heading" className="sr-only">
               Contact us
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Contact information */}
-              <div className="relative px-6 py-10 overflow-hidden rounded-lg bg-gradient-to-b from-accent-500 to-accent-600 sm:px-10 xl:p-12">
+              <div className="relative overflow-hidden rounded-lg bg-gradient-to-b from-accent-500 to-accent-600 px-6 py-10 sm:px-10 xl:p-12">
                 {/* Decorative angle backgrounds */}
                 <div
-                  className="absolute inset-0 pointer-events-none sm:hidden"
+                  className="pointer-events-none absolute inset-0 sm:hidden"
                   aria-hidden="true"
                 >
                   <svg
-                    className="absolute inset-0 w-full h-full"
+                    className="absolute inset-0 h-full w-full"
                     width={343}
                     height={388}
                     viewBox="0 0 343 388"
@@ -141,11 +141,11 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div
-                  className="absolute top-0 bottom-0 right-0 hidden w-1/2 pointer-events-none sm:block lg:hidden"
+                  className="pointer-events-none absolute top-0 bottom-0 right-0 hidden w-1/2 sm:block lg:hidden"
                   aria-hidden="true"
                 >
                   <svg
-                    className="absolute inset-0 w-full h-full"
+                    className="absolute inset-0 h-full w-full"
                     width={359}
                     height={339}
                     viewBox="0 0 359 339"
@@ -174,11 +174,11 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div
-                  className="absolute top-0 bottom-0 right-0 hidden w-1/2 pointer-events-none lg:block"
+                  className="pointer-events-none absolute top-0 bottom-0 right-0 hidden w-1/2 lg:block"
                   aria-hidden="true"
                 >
                   <svg
-                    className="absolute inset-0 w-full h-full"
+                    className="absolute inset-0 h-full w-full"
                     width={160}
                     height={678}
                     viewBox="0 0 160 678"
@@ -209,7 +209,7 @@ const Contact = () => {
                 <h3 className="text-lg font-medium text-white dark:text-slate-800">
                   Contact information
                 </h3>
-                <p className="max-w-3xl mt-6 text-base text-white dark:text-slate-800">
+                <p className="mt-6 max-w-3xl text-base text-white dark:text-slate-800">
                   Please contact me with any questions or comments you may have.
                   You can also schedule a service through the form below.
                 </p>
@@ -219,7 +219,7 @@ const Contact = () => {
                   </dt>
                   <dd className="flex text-base text-white dark:text-slate-800">
                     <RiPhoneLine
-                      className="flex-shrink-0 w-6 h-6 text-accent-200 dark:text-slate-800"
+                      className="h-6 w-6 flex-shrink-0 text-accent-200 dark:text-slate-800"
                       aria-hidden="true"
                     />
                     <span className="ml-3">{siteMetadata.phoneNumber}</span>
@@ -229,13 +229,13 @@ const Contact = () => {
                   </dt>
                   <dd className="flex text-base text-white dark:text-slate-800">
                     <RiMailLine
-                      className="flex-shrink-0 w-6 h-6 text-accent-200 dark:text-slate-800"
+                      className="h-6 w-6 flex-shrink-0 text-accent-200 dark:text-slate-800"
                       aria-hidden="true"
                     />
                     <span className="ml-3">{siteMetadata.email}</span>
                   </dd>
                 </dl>
-                <ul role="list" className="flex mt-8 space-x-12">
+                <ul role="list" className="mt-8 flex space-x-12">
                   <li>
                     <Link
                       className="text-accent-200 hover:text-accent-100 dark:text-slate-800 dark:hover:text-slate-700"
@@ -296,7 +296,7 @@ const Contact = () => {
               </div>
 
               {/* Contact form */}
-              <div className="px-6 py-10 bg-white rounded-lg dark:bg-slate-900 sm:px-10 lg:col-span-2 xl:p-12">
+              <div className="rounded-lg bg-white px-6 py-10 dark:bg-slate-900 sm:px-10 lg:col-span-2 xl:p-12">
                 <h3 className="text-lg font-medium text-primaryText-800 dark:text-primaryText-100">
                   Send me a message
                 </h3>
@@ -304,7 +304,7 @@ const Contact = () => {
                 <form
                   onSubmit={handleOnSubmit}
                   method="POST"
-                  className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                  className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
                   <div>
                     <label
@@ -321,7 +321,7 @@ const Contact = () => {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
+                        className="block w-full rounded-md border-primaryText-100 px-4 py-3 text-primaryText-800 shadow-sm focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
@@ -340,7 +340,7 @@ const Contact = () => {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
+                        className="block w-full rounded-md border-primaryText-100 px-4 py-3 text-primaryText-800 shadow-sm focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
@@ -359,7 +359,7 @@ const Contact = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
+                        className="block w-full rounded-md border-primaryText-100 px-4 py-3 text-primaryText-800 shadow-sm focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
@@ -386,7 +386,7 @@ const Contact = () => {
                         name="phone"
                         id="phone"
                         autoComplete="tel"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
+                        className="block w-full rounded-md border-primaryText-100 px-4 py-3 text-primaryText-800 shadow-sm focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                         aria-describedby="phone-optional"
                       />
                     </div>
@@ -405,7 +405,7 @@ const Contact = () => {
                         type="text"
                         name="subject"
                         id="subject"
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
+                        className="block w-full rounded-md border-primaryText-100 px-4 py-3 text-primaryText-800 shadow-sm focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                       />
                     </div>
                   </div>
@@ -430,7 +430,7 @@ const Contact = () => {
                         id="message"
                         name="message"
                         rows={4}
-                        className="block w-full px-4 py-3 rounded-md shadow-sm border-primaryText-100 text-primaryText-800 focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
+                        className="block w-full rounded-md border-primaryText-100 px-4 py-3 text-primaryText-800 shadow-sm focus:border-accent-500 focus:ring-accent-500 dark:border-primaryText-700/40 dark:bg-slate-800 dark:text-primaryText-100"
                         aria-describedby="message-max"
                         defaultValue={''}
                       />
@@ -439,7 +439,7 @@ const Contact = () => {
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 dark:text-slate-800 sm:w-auto"
+                      className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-accent-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 dark:text-slate-800 sm:w-auto"
                     >
                       Submit
                     </button>

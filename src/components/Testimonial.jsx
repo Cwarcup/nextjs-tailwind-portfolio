@@ -1,18 +1,18 @@
 import Image from 'next/image'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '../../data/siteMetadata'
 
 const Testimonial = () => {
   return (
     <div className="pt-16 lg:py-24 ">
-      <div className="pb-16 bg-fixed bg-center bg-cover bg-gradient-to-b from-gradientStart-500 to-gradientEnd-500 dark:from-gradientStart-700 dark:to-gradientEnd-900 lg:relative lg:z-10 lg:pb-0">
+      <div className="bg-gradient-to-b from-gradientStart-500 to-gradientEnd-500 bg-cover bg-fixed bg-center pb-16 dark:from-gradientStart-700 dark:to-gradientEnd-900 lg:relative lg:z-10 lg:pb-0">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
           <div className="relative lg:-my-8">
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-0 bg-white h-1/2 dark:bg-black lg:hidden"
+              className="absolute inset-x-0 top-0 h-1/2 bg-white dark:bg-black lg:hidden"
             />
-            <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
-              <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+            <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
+              <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <Image
                   className="object-cover lg:h-full lg:w-full"
                   src={siteMetadata.testimonial.imgUrl}
@@ -25,11 +25,11 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
-            <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+            <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
               <blockquote>
                 <div>
                   <svg
-                    className="w-12 h-12 opacity-25 text-primaryText-100"
+                    className="h-12 w-12 text-primaryText-100 opacity-25"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                     aria-hidden="true"

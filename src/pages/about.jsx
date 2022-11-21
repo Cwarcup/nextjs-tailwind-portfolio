@@ -2,26 +2,26 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '../../data/siteMetadata'
 
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 import {
   TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
   MailIcon,
-} from '@/components/SocialIcons'
-import avatarImage from '@/images/avatar.jpg'
+} from '../components/SocialIcons'
+import avatarImage from '../images/avatar.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="flex text-sm font-medium transition group text-primaryText-800 hover:text-accent-500 dark:text-primaryText-200 dark:hover:text-accent-500"
+        className="group flex text-sm font-medium text-primaryText-800 transition hover:text-accent-500 dark:text-primaryText-200 dark:hover:text-accent-500"
       >
-        <Icon className="flex-none w-6 h-6 transition fill-primaryText-500 group-hover:fill-accent-500" />
+        <Icon className="h-6 w-6 flex-none fill-primaryText-500 transition group-hover:fill-accent-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -43,7 +43,7 @@ const About = () => {
                 src={avatarImage}
                 alt="picture of the author"
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="object-cover aspect-square rounded-2xl bg-primaryText-100 dark:bg-primaryText-800"
+                className="aspect-square rounded-2xl bg-primaryText-100 object-cover dark:bg-primaryText-800"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ const About = () => {
             <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl">
               {siteMetadata.authorHeadline}
             </h1>
-            <div className="mt-6 text-base space-y-7 text-primaryText-600 dark:text-primaryText-400">
+            <div className="mt-6 space-y-7 text-base text-primaryText-600 dark:text-primaryText-400">
               <p className="whitespace-pre-wrap">
                 {siteMetadata.authorAboutExtended}
               </p>
@@ -89,7 +89,7 @@ const About = () => {
               <SocialLink
                 href={`mailto:${siteMetadata.email}`}
                 icon={MailIcon}
-                className="pt-8 mt-8 border-t border-primaryText-100 dark:border-primaryText-700/40"
+                className="mt-8 border-t border-primaryText-100 pt-8 dark:border-primaryText-700/40"
               >
                 {siteMetadata.email}
               </SocialLink>

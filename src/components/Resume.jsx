@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import BriefcaseIcon from '@/images/icons/BriefcaseIcon'
-import ArrowDownIcon from '@/images/icons/ArrowDownIcon'
-import { Button } from '@/components/Button'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import BriefcaseIcon from '../images/icons/BriefcaseIcon'
+import ArrowDownIcon from '../images/icons/ArrowDownIcon'
+import { Button } from '../components/Button'
+import logoAirbnb from '../images/logos/airbnb.svg'
+import logoFacebook from '../images/logos/facebook.svg'
+import logoPlanetaria from '../images/logos/planetaria.svg'
+import logoStarbucks from '../images/logos/starbucks.svg'
 
 const Resume = () => {
   let resume = [

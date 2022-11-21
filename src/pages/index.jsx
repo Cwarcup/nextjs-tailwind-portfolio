@@ -1,13 +1,17 @@
 import Head from 'next/head'
-import { Container } from '@/components/Container'
-import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
-import SocialLink from '@/components/SocialLink'
-import Testimonial from '@/components/Testimonial'
-import Faq from '@/components/Faq'
-import FeatureSection from '@/components/FeatureSection'
-import CallToAction from '@/components/CallToAction'
-import DivideLine from '@/components/DivideLine'
-import siteMetadata from '@/data/siteMetadata'
+import { Container } from '../components/Container'
+import {
+  TwitterIcon,
+  GitHubIcon,
+  LinkedInIcon,
+} from '../components/SocialIcons'
+import SocialLink from '../components/SocialLink'
+import Testimonial from '../components/Testimonial'
+import Faq from '../components/Faq'
+import FeatureSection from '../components/FeatureSection'
+import CallToAction from '../components/CallToAction'
+import DivideLine from '../components/DivideLine'
+import siteMetadata from '../../data/siteMetadata'
 
 const Home = () => {
   return (
@@ -37,7 +41,7 @@ const Home = () => {
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Container className="mt-9">
+      <Container className="mt-32">
         <div className="grid max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl">
             {siteMetadata.authorHeadline}
@@ -45,7 +49,7 @@ const Home = () => {
           <p className="mt-6 text-base text-primaryText-600 dark:text-primaryText-400">
             {siteMetadata.authorAbout}
           </p>
-          <div className="flex gap-6 mt-6">
+          <div className="mt-6 flex gap-6">
             <SocialLink
               href={siteMetadata.socials.twitter}
               aria-label="Follow on Twitter"
