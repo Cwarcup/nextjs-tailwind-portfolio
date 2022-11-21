@@ -1,3 +1,7 @@
+import { GiBanana } from 'react-icons/gi'
+import { RiShoppingBagLine, RiCarLine } from 'react-icons/ri'
+import { IoFastFoodOutline } from 'react-icons/io5'
+
 const siteMetadata = {
   title: 'Best Nextjs Tailwind Portfolio',
   description:
@@ -45,6 +49,10 @@ const siteMetadata = {
     {
       name: 'Contact',
       href: '/contact',
+    },
+    {
+      name: 'Projects',
+      href: '/projects',
     },
   ],
   siteRepo: 'https://github.com/Cwarcup/',
@@ -114,6 +122,7 @@ const siteMetadata = {
       },
     ],
   },
+
 }
 
 export default siteMetadata
