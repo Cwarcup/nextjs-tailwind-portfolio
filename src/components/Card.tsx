@@ -14,7 +14,19 @@ function ChevronRightIcon(props) {
   )
 }
 
-export function Card({ as: Component = 'div', className, children }) {
+// type for card props
+type CardProps = {
+  as?: React.ElementType
+  href?: string
+  className?: string
+  children?: React.ReactNode
+}
+
+export function Card({
+  as: Component = 'div',
+  className,
+  children,
+}: CardProps) {
   return (
     <Component
       className={clsx(className, 'group relative flex flex-col items-start')}
@@ -24,19 +36,28 @@ export function Card({ as: Component = 'div', className, children }) {
   )
 }
 
-Card.Link = function CardLink({ children, ...props }) {
+type CardLinkProps = {
+  href: string
+  children: React.ReactNode
+}
+
+Card.Link = function CardLink({ children, ...props }: CardLinkProps) {
   return (
     <>
-      <div className="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-primaryText-200/50 group-hover:scale-100 group-hover:opacity-100 dark:bg-primaryText-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-primaryText-200/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-primaryText-800/50 sm:-inset-x-6 sm:rounded-2xl" />
       <Link {...props}>
-        <span className="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl" />
+        <span className="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
       </Link>
     </>
   )
 }
 
-Card.Title = function CardTitle({ as: Component = 'h2', href, children }) {
+Card.Title = function CardTitle({
+  as: Component = 'h2',
+  href,
+  children,
+}: CardProps) {
   return (
     <Component className="text-base font-semibold tracking-tight text-primaryText-800 dark:text-primaryText-100">
       {href ? <Card.Link href={href}>{children}</Card.Link> : children}
@@ -44,7 +65,7 @@ Card.Title = function CardTitle({ as: Component = 'h2', href, children }) {
   )
 }
 
-Card.Description = function CardDescription({ children }) {
+Card.Description = function CardDescription({ children }: CardProps) {
   return (
     <p className="relative z-10 mt-2 text-sm text-primaryText-600 dark:text-primaryText-400">
       {children}
@@ -52,14 +73,14 @@ Card.Description = function CardDescription({ children }) {
   )
 }
 
-Card.Cta = function CardCta({ children }) {
+Card.Cta = function CardCta({ children }: CardProps) {
   return (
     <div
       aria-hidden="true"
-      className="relative z-10 flex items-center mt-4 text-sm font-medium text-accent-500"
+      className="relative z-10 mt-4 flex items-center text-sm font-medium text-accent-500"
     >
       {children}
-      <ChevronRightIcon className="w-4 h-4 ml-1 stroke-current" />
+      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
     </div>
   )
 }
@@ -70,7 +91,7 @@ Card.Eyebrow = function CardEyebrow({
   className,
   children,
   ...props
-}) {
+}: CardProps & { decorate?: boolean }) {
   return (
     <Component
       className={clsx(

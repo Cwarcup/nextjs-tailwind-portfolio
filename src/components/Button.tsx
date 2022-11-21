@@ -8,7 +8,19 @@ const variantStyles = {
     'bg-primaryText-50 font-medium text-primaryText-900 hover:bg-primaryText-100 active:bg-primaryText-100 active:text-primaryText-900/60 dark:bg-primaryText-800/50 dark:text-primaryText-300 dark:hover:bg-primaryText-800 dark:hover:text-primaryText-50 dark:active:bg-primaryText-800/50 dark:active:text-primaryText-50/70',
 }
 
-export function Button({ variant = 'primary', className, href, ...props }) {
+export type ButtonProps = {
+  href: string
+  className?: string
+  children?: React.ReactNode
+  variant?: 'primary' | 'secondary' | 'tertiary'
+}
+
+export function Button({
+  variant = 'primary',
+  className,
+  href,
+  ...props
+}: ButtonProps) {
   className = clsx(
     'inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none',
     variantStyles[variant],

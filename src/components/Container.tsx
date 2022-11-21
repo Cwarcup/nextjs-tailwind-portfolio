@@ -1,8 +1,14 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
 
+type ContainerProps = {
+  className?: string
+  children?: React.ReactNode
+  ref: React.Ref<HTMLDivElement>
+}
+
 const OuterContainer = forwardRef(function OuterContainer(
-  { className, children, ...props },
+  { className, children, ...props }: ContainerProps,
   ref
 ) {
   return (
@@ -13,7 +19,7 @@ const OuterContainer = forwardRef(function OuterContainer(
 })
 
 const InnerContainer = forwardRef(function InnerContainer(
-  { className, children, ...props },
+  { className, children, ...props }: ContainerProps,
   ref
 ) {
   return (
@@ -27,16 +33,17 @@ const InnerContainer = forwardRef(function InnerContainer(
   )
 })
 
+type ContainerType = typeof OuterContainer & {
+  Inner: typeof InnerContainer
+}
+
 export const Container = forwardRef(function Container(
-  { children, ...props },
+  { children, ...props }: ContainerProps,
   ref
 ) {
   return (
     <OuterContainer ref={ref} {...props}>
-      <InnerContainer>{children}</InnerContainer>
+      {children}
     </OuterContainer>
   )
-})
-
-Container.Outer = OuterContainer
-Container.Inner = InnerContainer
+}) as ContainerType
