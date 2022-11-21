@@ -26,7 +26,7 @@ export default function App({ Component, pageProps, router }) {
           <div className="w-full bg-white ring-1 ring-primaryText-100 dark:bg-primaryText-900 dark:ring-primaryText-300/20" />
         </div>
       </div>
-      <div className="relative">
+      <div className="flex flex-col justify-between h-screen">
         <Header />
         <main>
           <Component previousPathname={previousPathname} {...pageProps} />

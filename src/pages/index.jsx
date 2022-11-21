@@ -37,7 +37,7 @@ const Home = () => {
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Container className="mt-9">
+      <Container className="mt-32">
         <div className="grid max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-primaryText-800 dark:text-primaryText-100 sm:text-5xl">
             {siteMetadata.authorHeadline}
