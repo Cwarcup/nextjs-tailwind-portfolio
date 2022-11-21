@@ -90,13 +90,6 @@ Here is an example of the emailJS template I used. You can use this as a startin
 
 This branch is for those who want to use this as a developer portfolio. It serves as a site to showcase your projects, skills, and get in touch with you.
 
-### Blog - Coming Soon
-
-This branch is for those who want to use this as a blog. Generate an RSS feed, and add a blog page to your site.
-
-### Ecommerce - Coming Soon
-
-This branch is for those who want to use this as an ecommerce site. It includes a basic ecommerce layout, checkout, authentication and database.
 
 ## Deploy on Vercel
 
@@ -154,24 +147,19 @@ For example, if you wanted to change the `primaryText` color to `blue`, you woul
 
 - [ ] Customize sections
   - [X] Gerneral Info
-  - [ ] Images
-  - [ ] Heade sections
+  - [X] Header Links
   - [X] About section
-  - [ ] Resume section
-    - [ ] Experience section
-    - [ ] Education Section
-  - [ ] Projects sections
+  - [X] Resume section
+    - [X] Experience section
+    - [X] Education Section
+  - [X] Projects sections
   - [X] Contact Section
     - [X] Contact Form with MailJS
     - [x] Social links
-  - [ ] Footer customizations
+  - [X] Footer customizations
 - [ ] Update `pages` to use next 13 `app`, `page`, and `layout` components.
 - [ ] Typescript support
 - [ ] Add a blog page and generate an RSS feed
   - [ ] syntax highlighting
   - [ ] markdown support
-- [ ] Add an e-commerce page
-- [ ] Database integration for e-commerce
-- [ ] Authentication for e-commerce
-- [ ] Project page
-- [ ] 
+

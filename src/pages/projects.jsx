@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import siteMetadata from '@/data/siteMetadata'
 
 import ecomLogo from '@/images/projects/ecom.svg'
 import bananaLogo from '@/images/projects/bananaApp.svg'
@@ -52,15 +53,12 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
-        <meta
-          name="description"
-          content="Things I’ve made trying to put my dent in the universe."
-        />
+        <title>Projects - {siteMetadata.author}</title>
+        <meta name="description" content="Personal projects by Curtis Warcup" />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Projects I've worked on"
+        intro="These are some of the projects that I'm most proud of. I've built them to learn new technologies, or to solve a problem that I've encountered."
       >
         <ul
           role="list"
